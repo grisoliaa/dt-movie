@@ -16,6 +16,23 @@ function buscarFilme(event) {
         var card = document.getElementById("containerCards")
             console.log(card)
 
+            if(response.Error){
+                card.innerHTML = `
+                
+                <div class="container-text-error">
+
+                    <h1 class="h1-film-error">
+
+                        Filme não encontrado.
+
+                    </h1>
+
+                </div>
+
+                `
+                return 
+            }
+
         card.innerHTML = `
         
                 <div class="cards-all">
