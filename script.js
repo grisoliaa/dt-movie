@@ -5,7 +5,7 @@ function buscarFilme(event) {
 
             console.log(buscar)
 
-    fetch(`http://www.omdbapi.com/?t=${buscar}&apikey=5c19b70e`, {
+    fetch(`https://www.omdbapi.com/?t=${buscar}&apikey=5c19b70e`, {
         method:"GET"
     
     }).then(function(response){
